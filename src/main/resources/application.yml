@@ -1,0 +1,15 @@
+server:
+    port: 8888
+spring:
+    application:
+        name: "config-server"
+    cloud:
+        config:
+            server:
+                git:
+                    uri: https://github.com/chitrasem/config-server.git
+                    username: chitrasem
+                    password: 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
+                    #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
+                    skip-ssl-validation: false
+                    clone-on-start: true
